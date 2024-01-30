@@ -7,14 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class IndexController {
 	
-	@GetMapping("/")
-	public String getRedirectMain(){
-		return "/guio";
-	}
 	
-	@GetMapping("/guio")
+	@GetMapping("/")
 	public String getIndexPage(){
-		return "redirect:guio";
+		return "guio";
 	}
 	
 	
