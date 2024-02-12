@@ -13,5 +13,9 @@ public class IndexController {
 		return "guio";
 	}
 	
+	@GetMapping("/amor")
+	public String getIndexPageTeste(){
+		return "teste";
+	}
 	
 }
